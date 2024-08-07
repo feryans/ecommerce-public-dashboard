@@ -86,7 +86,6 @@ def create_rfm_df(df):
 
 st.set_page_config(
     page_title="E-Commerce Public Dashboard",
-    page_icon="dashboard\web_icon.png",
     layout="centered",
     initial_sidebar_state="auto",
 )
@@ -102,7 +101,7 @@ min_date = all_df['order_purchase_timestamp'].min()
 max_date = all_df['order_purchase_timestamp'].max()
 
 with st.sidebar:
-    st.image("D:/Muhammad Feryansyah/submission/dashboard/web_icon.png")
+    st.image("dashboard/web_icon.png")
     st.header('Filter')
 
     start_date, end_date = st.date_input(
