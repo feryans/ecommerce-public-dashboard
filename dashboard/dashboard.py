@@ -91,7 +91,7 @@ st.set_page_config(
     initial_sidebar_state="auto",
 )
 
-all_df = pd.read_csv('D:/Muhammad Feryansyah/submission/dashboard/all_df.csv')
+all_df = pd.read_csv('dashboard/all_df.csv')
 
 all_df.sort_values(by='order_purchase_timestamp', inplace=True)
 all_df.reset_index(inplace=True)
